@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "GlycoStep",
+    "slug": "glycostep",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0A0A0C"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.buildingcoolstuff.glycostep",
+      "entitlements": {
+        "com.apple.security.application-groups": [
+          "group.com.buildingcoolstuff.glycostep"
+        ]
+      },
+      "infoPlist": {
+        "NSSupportsLiveActivities": true,
+        "NSSupportsLiveActivitiesFrequentUpdates": true,
+        "NSMotionUsageDescription": "GlycoStep reads real-time motion data from the Apple Silicon Motion Hub to track steps during active post-meal walks without delay.",
+        "NSHealthShareUsageDescription": "GlycoStep accesses your step data to analyze your metabolic post-meal walking trends.",
+        "NSHealthUpdateUsageDescription": "GlycoStep saves completed post-meal walking sessions as structured workouts in Apple Health."
+      }
+    },
+    "android": {
+      "package": "com.buildingcoolstuff.glycostep",
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0A0C",
+        "foregroundImage": "./assets/android-icon-foreground.png"
+      },
+      "permissions": [
+        "android.permission.ACTIVITY_RECOGNITION"
+      ]
+    },
+    "plugins": [
+      [
+        "@bacons/apple-targets",
+        {
+          "appleTeamId": "APPLE_TEAM_ID"
+        }
+      ]
+    ]
+  }
+}
