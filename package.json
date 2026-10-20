@@ -13,7 +13,7 @@
     "lint": "tsc --noEmit"
   },
   "dependencies": {
-    "@bacons/apple-targets": "^0.0.87",
+    "@bacons/apple-targets": "^5.0.0",
     "expo": "~58.0.16",
     "expo-haptics": "~15.0.8",
     "expo-sensors": "~15.0.8",
